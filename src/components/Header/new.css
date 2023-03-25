@@ -1,0 +1,15 @@
+.yay-currency-custom-select__trigger {
+    border: none !important;
+    background: transparent !important;
+
+}
+
+.yay-currency-custom-arrow::before {
+
+    background-color: black !important;
+}
+
+.yay-currency-custom-arrow::after {
+
+    background-color: black !important;
+}

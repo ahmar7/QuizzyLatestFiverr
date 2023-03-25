@@ -1,0 +1,32 @@
+.white-btn {
+    &.white-btn-disabled {
+        background-color: #cccbcb;
+        cursor: default;
+    }
+    width: auto;
+    padding-inline: 20px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Plus Jakarta Sans";
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+    &:not(.white-btn-disabled):hover {
+        transform: scale(1.1);
+        background-color: #8358e8;
+        box-shadow: 0px 0px 25px #8358e8;
+        color: white;
+        svg {
+            filter: brightness(1);
+        }
+    }
+}

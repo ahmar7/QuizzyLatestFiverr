@@ -1,0 +1,218 @@
+.animateit {
+    animation: mymove 1s forwards ease-in-out;
+}
+
+.animateitup {
+    animation: mymoveup 1s forwards ease-in-out;
+}
+
+.show {
+    animation: showEmoji 0.8s forwards ease-in-out;
+}
+
+.hide {
+    animation: hideEmoji 0.8s forwards ease-in-out;
+}
+
+.showdef {
+    animation: showEmoji 0.8s forwards ease-in-out;
+    /* animation-delay: 5s; */
+
+}
+
+.hidedef {
+    animation: hideEmoji 0.8s forwards ease-in-out 700ms;
+    /* animation-delay: 5s; */
+
+    /* animation-delay: 500ms; */
+}
+
+.showterm {
+    animation: showterm 1s forwards ease-in-out;
+
+}
+
+.hideterm {
+    animation: hideterm 1s forwards ease;
+
+}
+
+.fontsmall {
+    animation: fontchota 1s forwards ease 700ms;
+
+}
+
+.fontlarge {
+    animation: fontbara 1s forwards ease;
+
+}
+
+.hidesub {
+    animation: hidesubs 1s forwards ease-in-out;
+    /* animation-delay: 750ms; */
+
+
+}
+
+.showsub {
+    animation: showsubs 1s ease-in-out;
+
+}
+
+.cnb {
+    animation: showsubs 1s forwards ease-in-out;
+    /* animation-delay: 250ms; */
+
+}
+
+.white-clr {
+    animation: whitebg 1s forwards ease-in-out;
+
+}
+
+.gray-clr {
+    animation: graybg 1s forwards ease-in-out;
+
+}
+
+@keyframes whitebg {
+    from {
+        background: #d9d9d9
+    }
+
+    to {
+        background: white
+    }
+
+
+}
+
+@keyframes graybg {
+    from {
+        background: white
+    }
+
+    to {
+        background: #d9d9d9
+    }
+
+
+}
+
+
+
+@keyframes fontchota {
+    from {
+        font-size: 52px;
+        margin-bottom: 0px;
+    }
+
+    to {
+        font-size: 32px;
+        margin-bottom: 170px;
+
+    }
+
+
+}
+
+@keyframes mymove {
+    from {
+        margin-top: -40px;
+
+        opacity: 1;
+    }
+
+    to {
+        margin-top: -340px;
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes mymoveup {
+    from {
+        margin-top: -340px;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: -0px;
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes showEmoji {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes showterm {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes showsubs {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes hideEmoji {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes hidesubs {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes hideterm {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+
+}

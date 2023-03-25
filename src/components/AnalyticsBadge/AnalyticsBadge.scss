@@ -1,0 +1,25 @@
+.analytics-icon {
+    margin: 0;
+    border-radius: 0.5rem;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    cursor: pointer;
+    background: radial-gradient(#8358e8, #523598);
+    box-shadow: 0 0 15px #523598;
+    transition: 0.2s;
+    text-decoration: none !important;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 30px #523598;
+    }
+    a,
+    p {
+        color: white !important;
+        font-weight: bolder !important;
+        font-family: "Plus Jakarta Sans" !important;
+    }
+}

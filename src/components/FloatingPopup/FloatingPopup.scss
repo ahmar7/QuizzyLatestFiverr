@@ -1,0 +1,54 @@
+@keyframes appear {
+    0% {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+.floating-popup {
+    position: fixed;
+    background: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.16));
+    max-width: 574px;
+    display: flex;
+    z-index: 100;
+    padding: 20px;
+    top: 75%;
+    margin-bottom: 30px;
+    animation-name: appear;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    &.floating-popup-relative {
+        z-index: 1;
+    }
+    .floating-popup-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        h1 {
+            color: #2a2a2a;
+            font-family: "Plus Jakarta Sans";
+            font-weight: bold;
+            font-size: 24px !important;
+            margin-bottom: 0 !important;
+        }
+        p {
+            color: #7b7b7b;
+            font-family: "Plus Jakarta Sans";
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+    }
+
+    .close-button {
+        cursor: pointer;
+    }
+}
