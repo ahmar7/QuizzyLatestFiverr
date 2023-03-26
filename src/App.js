@@ -42,6 +42,9 @@ const Dashboard_Friends = lazy(() =>
 const Dashboard_Changelog = lazy(() =>
   import("./pages/Dashboard-Changelog/Dashboard-Changelog")
 );
+const Dashboard_Settings = lazy(() =>
+  import("./pages/Dashboard-Settings/Dashboard-Settings")
+);
 const Header = lazy(() => import("./components/Header/Header"));
 const Footer = lazy(() => import("./components/Footer/Footer"));
 const QuizzyPlus = lazy(() => import("./pages/QuizzyPlus/QuizzyPlus"));
@@ -144,6 +147,10 @@ function App() {
                 element={<Dashboard_Changelog user={user} setUser={setUser} />}
               />
               <Route
+                path="/dashboard/settings"
+                element={<Dashboard_Settings user={user} setUser={setUser} />}
+              />
+              <Route
                 path="/quizzyplus"
                 element={<QuizzyPlus user={user} setUser={setUser} />}
               />
@@ -155,7 +162,10 @@ function App() {
                 path="/quizzyplus/purchase/thanks"
                 element={<ThanksForPurchase user={user} setUser={setUser} />}
               />
-              <Route path="/upgrade" element={<Upgrade user={user} setUser={setUser}/>} />}
+              <Route
+                path="/upgrade"
+                element={<Upgrade user={user} setUser={setUser} />}
+              />
 
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
@@ -163,11 +173,20 @@ function App() {
               <Route path="/reset-password" element={<ResetPassword />} />
               <Route path="/quiz-exam" element={<QuizExam />} />
               <Route path="/quiz-finished" element={<QuizFinished />} />
-              <Route path="/support" element={<Support/>}/>
-              <Route path="/support/write" element={<WriteSupportArticle user={user} setUser={setUser}/>}/>
-              <Route path="/support/sections/:section" element={<SupportSection/>}/>
-              <Route path="/support/sections/:section/:id/:article" element={<SupportArticle/>}/>
-              
+              <Route path="/support" element={<Support />} />
+              <Route
+                path="/support/write"
+                element={<WriteSupportArticle user={user} setUser={setUser} />}
+              />
+              <Route
+                path="/support/sections/:section"
+                element={<SupportSection />}
+              />
+              <Route
+                path="/support/sections/:section/:id/:article"
+                element={<SupportArticle />}
+              />
+
               <Route
                 path="/search/:query"
                 element={<Search user={user} setUser={setUser} />}
@@ -194,7 +213,7 @@ function App() {
               />
               <Route
                 path="/study/:setid/:title/edit"
-                element={<Create user={user} setUser={setUser} edit={true}/>}
+                element={<Create user={user} setUser={setUser} edit={true} />}
               />
               <Route path="/tag/:tag" element={<Tag />} />
               <Route
