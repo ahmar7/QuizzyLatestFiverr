@@ -17,15 +17,15 @@ const SettingBar = () => {
                 </li>
                 <li className="indiv-link">
                     <img src={LockIco} alt="" />
-                    <p>User Profile</p>
+                    <p>Privacy</p>
                 </li>
                 <li className="indiv-link">
                     <img src={BellIco} alt="" />
-                    <p>User Profile</p>
+                    <p>Notifications</p>
                 </li>
                 <li className="indiv-link ">
                     <img src={PreviewIco} alt="" />
-                    <p>User Profile</p>
+                    <p>Appearance</p>
                 </li>
          </ul>
          <div className="setting-social">

@@ -9,16 +9,14 @@ import { get_user } from "../../network/communication";
 import party from "party-js"
 import AddTask from "../../components/AddTask/AddTask";
 import SettingBar from "../../components/SettingSideBar/SettingBar";
+import UserProfile from "../../components/UserProfile/UserProfile";
 
 
 function Settings(props) {
-    const navigate = useNavigate();
-    const confetti = useRef(null);
+    
 
     const [addTaskVisible, setAddTaskVisible] = useState(false);
-    const [changelogData, setChangelogData] = useState({
-       
-    })
+   
     var user = props.user 
     var setUser = props.setUser 
     useEffect(() => {
@@ -34,17 +32,20 @@ function Settings(props) {
         }, []) 
 //
     return (
-        <main className="changelog-main">
+        <main className="setting-main">
             <Navbar user={user} setUser={setUser} active={5}/>
             <AddTask
                 user={user}
                 visible={addTaskVisible}
                 setVisible={setAddTaskVisible}
             ></AddTask>
-            <section className="changelog">
+            <section className="setting">
                 <SettingBar/>
        
-              
+            <div className="setting-content">
+                <UserProfile />
+
+            </div>
             </section>
         </main>
         

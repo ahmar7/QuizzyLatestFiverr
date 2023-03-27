@@ -12,7 +12,7 @@ function Footer(props) {
     const [linkedinIconHovered, setLinkedInIconHovered] = useState(false);
     return (
         <>
-        {(!["/signup", "/login", "/404", "/forgot-password", "/reset-password", "/dashboard", "/dashboard/study", "/dashboard/friends"].includes(location.pathname) && location.pathname.indexOf("/recall") === -1) && (
+        {(!["/signup", "/login", "/404", "/forgot-password", "/reset-password", "/dashboard", "/dashboard/study", "/dashboard/friends","/dashboard/settings"].includes(location.pathname) && location.pathname.indexOf("/recall") === -1) && (
         <footer className="quizzy-footer">
             <div className="cover">
                 <div className="divider">
