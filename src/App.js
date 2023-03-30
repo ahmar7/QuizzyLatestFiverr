@@ -45,6 +45,14 @@ const Dashboard_Changelog = lazy(() =>
 const Dashboard_Settings = lazy(() =>
   import("./pages/Dashboard-Settings/Dashboard-Settings")
 );
+const Dashboard_Settings_Privacy = lazy(() =>
+  import("./pages/Dashboard-Settings-Privacy/Dashboard-Settings-privacy")
+);
+const Dashboard_Settings_Notifications = lazy(() =>
+  import(
+    "./pages/Dashboard-Settings-Notifications/Dashboard-Settings-Notifications"
+  )
+);
 const Header = lazy(() => import("./components/Header/Header"));
 const Footer = lazy(() => import("./components/Footer/Footer"));
 const QuizzyPlus = lazy(() => import("./pages/QuizzyPlus/QuizzyPlus"));
@@ -147,8 +155,23 @@ function App() {
                 element={<Dashboard_Changelog user={user} setUser={setUser} />}
               />
               <Route
-                path="/dashboard/settings"
+                path="/dashboard/settings/profile"
                 element={<Dashboard_Settings user={user} setUser={setUser} />}
+              />
+              <Route
+                path="/dashboard/settings/privacy"
+                element={
+                  <Dashboard_Settings_Privacy user={user} setUser={setUser} />
+                }
+              />
+              <Route
+                path="/dashboard/settings/notifications"
+                element={
+                  <Dashboard_Settings_Notifications
+                    user={user}
+                    setUser={setUser}
+                  />
+                }
               />
               <Route
                 path="/quizzyplus"

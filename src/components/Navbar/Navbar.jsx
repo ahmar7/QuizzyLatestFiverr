@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Navbar.scss";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -9,6 +9,8 @@ import { get_session_token } from "../../network/communication";
 import PlaceholderRectangle from "../PlaceholderRectangle/PlaceholderRectangle";
 
 function Navbar(props) {
+  const [toggleBar, settoggleBar] = useState(false);
+
   const dispatch = useDispatch();
   const user = props.user
   const handleLogout = () => {
@@ -17,7 +19,7 @@ function Navbar(props) {
   };
 
   return (
-    <aside className="navbar">
+    <aside id="navBar" className= "navbar" >
       <nav>
         <ul>
           <li className="close-nav">
@@ -209,7 +211,7 @@ function Navbar(props) {
             
           ) : (
           <li className={props.active == 5 && "active"}>
-            <Link to="/dashboard/settings">
+            <Link to="/dashboard/settings/profile">
               <svg
                 id="settings_black_24dp"
                 xmlns="http://www.w3.org/2000/svg"

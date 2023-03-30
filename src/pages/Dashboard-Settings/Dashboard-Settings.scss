@@ -168,11 +168,7 @@
         }
     }
 @media (max-width:1300px) {
-    .setting-main .setting {
-    width: 81%; 
-   
-    margin-left: 60px;
-}
+ 
     
 .show-navbars {
     .navbars-right {
@@ -182,9 +178,8 @@
 }
 @media (max-width:1040px) {
     .setting-main .setting {
-    width: 87%; 
-   
-    margin-left: 30px;
+    width: 90%; 
+    
 }
 .setting-main .setting .changelog-content .changelog-item .icon {
     padding: 8px;
@@ -200,7 +195,7 @@
 }
 @media (max-width:600px) {
     .setting-main .setting {
-    width: 90%; 
+    width: 100%; 
    
     margin: 0 auto;
 }

@@ -27,7 +27,7 @@ if(successShow===true){
                         <p>Your settings were successfully saved!</p>
                     </div>
                 </div>
-                <div className='cross' onClick={toggleSuccess}>X</div>
+                <div className='crosses' onClick={toggleSuccess}>X</div>
             </div>
             <h1 className='setting-head'>Settings - User Profile</h1>
             <div className="profile-data">

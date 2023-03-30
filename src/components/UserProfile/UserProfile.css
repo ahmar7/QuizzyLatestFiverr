@@ -3,7 +3,7 @@
 }
 .setting-head {
   margin-bottom: 0 !important;
-  font-family: "Segoe UI" !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
   font-size: 2.2rem !important;
 }
 .profile-data {
@@ -13,7 +13,7 @@
 .info-text {
   font-size: 19px;
   font-weight: bold;
-  font-family: "Segoe UI" !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 .info-desc {
   color: #7b7b7b;
@@ -41,7 +41,7 @@
   font-size: 17px;
   border: none;
   outline: none;
-  padding: 10px 25px;
+  padding: 11px 22px;
   cursor: pointer;
   /* UI Properties */
   background: transparent linear-gradient(180deg, #8358e8 0%, #4c72e6 100%) 0%
@@ -197,13 +197,14 @@
   color: #7b7b7b;
   margin-top: 5px;
 }
-.cross {
+.crosses {
   color: #7b7b7b;
   cursor: pointer;
 }
 .flex {
   display: flex;
 }
+
 @media (min-width: 1400px) {
   .main-profile {
     padding: 3rem 5rem;
@@ -211,7 +212,7 @@
   .setting-head {
     margin-bottom: 0 !important;
     font-size: 40px;
-    font-family: "Segoe UI" !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
   }
   .profile-data {
     margin-top: 20px;
@@ -220,7 +221,7 @@
   .info-text {
     font-size: 22px;
     font-weight: bold;
-    font-family: "Segoe UI" !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
   }
   .info-desc {
     color: #7b7b7b;
@@ -245,10 +246,6 @@
   }
 
   .upload-dp {
-    top: 428px;
-    left: 843px;
-    width: 153px;
-    height: 38px;
     /* UI Properties */
     background: transparent linear-gradient(180deg, #8358e8 0%, #4c72e6 100%) 0%
       0% no-repeat padding-box;
@@ -257,5 +254,72 @@
     opacity: 1;
     color: white;
     border: none;
+  }
+}
+@media (max-width: 900px) {
+  .flex-inputs {
+    display: flex;
+    gap: 23px;
+    flex-direction: column;
+  }
+  .main-profile {
+    padding: 3rem 1rem;
+  }
+  .setting-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .password-popup {
+    width: 340px;
+  }
+}
+@media (max-width: 900px) {
+  .profile-update {
+    width: auto;
+  }
+}
+@media (max-width: 615px) {
+  .profile-update {
+    padding: 20px 17px 20px 20px;
+  }
+  .flex {
+    align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  .setting-head {
+    font-size: 1.5rem !important;
+  }
+  .main-profile {
+    padding: 2.7rem 1rem;
+  }
+  .profile-data {
+    padding-left: 10px;
+  }
+  .single-input input,
+  .single-input textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .upload-dp {
+    padding: 10px 18px;
+  }
+  .profile-select img {
+    width: 70px;
+  }
+}
+@media (max-width: 440px) {
+  .info-desc {
+    font-size: 15px;
+  }
+  .password-popup {
+    padding: 40px 28px;
+    width: 270px;
+  }
+  .absol-cut {
+    top: 43px;
+    right: 22px;
   }
 }
